@@ -11,5 +11,5 @@
  */
 interface OrderPriceCalculatorInterface
 {
-    //put your code here
+    public 
 }

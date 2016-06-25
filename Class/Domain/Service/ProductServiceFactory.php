@@ -8,6 +8,8 @@ class ProductServiceFactory
      * @return ProductServiceInterface
      */
     public function createService() {
-        return new ProductService(null, null);
+        $productMapper = new \Domain\Mapper\ProductMapper();
+
+        return new ProductService(null, $productMapper);
     }
 }
