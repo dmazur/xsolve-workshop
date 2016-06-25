@@ -1,0 +1,65 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "7fa2630170b41aada679abc2ece51198",
+    "content-hash": "a7c7764efb1feb1e85b18624f2488ef3",
+    "packages": [
+        {
+            "name": "micro/micro",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Xeoncross/Micro.git",
+                "reference": "a0b700bebf6037cda663a76a5217475b34e518bd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Xeoncross/Micro/zipball/a0b700bebf6037cda663a76a5217475b34e518bd",
+                "reference": "a0b700bebf6037cda663a76a5217475b34e518bd",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Micro": "."
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Pennington",
+                    "homepage": "http://xeoncross.com"
+                }
+            ],
+            "description": "The MicroMVC Framework Libraries",
+            "keywords": [
+                "microframework"
+            ],
+            "support": {
+                "source": "https://github.com/Xeoncross/Micro/tree/1.0",
+                "issues": "https://github.com/Xeoncross/Micro/issues"
+            },
+            "time": "2013-04-10 14:41:44"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "micro/micro": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=5.3.0"
+    },
+    "platform-dev": []
+}

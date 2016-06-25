@@ -1,0 +1,2 @@
+11:22:28 127.0.0.1 [2] require(/home/hyfsterion/Programy/sandbox/xlab2/View/Sidebar.php): failed to open stream: Nie ma takiego pliku ani katalogu [/home/hyfsterion/Programy/sandbox/xlab2/vendor/micro/micro/Micro/View.php] (60)
+11:22:28 127.0.0.1 require(): Failed opening required '/home/hyfsterion/Programy/sandbox/xlab2/View/Sidebar.php' (include_path='.:/opt/lampp/lib/php') [/home/hyfsterion/Programy/sandbox/xlab2/vendor/micro/micro/Micro/View.php] (60)
