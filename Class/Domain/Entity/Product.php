@@ -76,7 +76,7 @@ class Product implements ProductInterface, HydratorAwareInterface
             'desc' => $this->desc,
             'sku' => $this->sku,
             'price' => $this->price,
-            'amount' => $this->amoun
+            'amount' => $this->amount
         ];
     }
 }
