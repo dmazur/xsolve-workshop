@@ -16,10 +16,12 @@ class Index extends \MyController
 {
 	public function run()
 	{
+		$productServiceFactory = new \Domain\Service\ProductServiceFactory();
+		$productService = $productServiceFactory->createService();
 
-
+		$this->productList = $productService->listAll();
 
 		// Load the welcome view
-		$this->content = new \Micro\View('Index/Index');
+		$this->content = 'Index/Index';
 	}
 }

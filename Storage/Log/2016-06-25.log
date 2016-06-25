@@ -1,2 +1,168 @@
 11:22:28 127.0.0.1 [2] require(/home/hyfsterion/Programy/sandbox/xlab2/View/Sidebar.php): failed to open stream: Nie ma takiego pliku ani katalogu [/home/hyfsterion/Programy/sandbox/xlab2/vendor/micro/micro/Micro/View.php] (60)
 11:22:28 127.0.0.1 require(): Failed opening required '/home/hyfsterion/Programy/sandbox/xlab2/View/Sidebar.php' (include_path='.:/opt/lampp/lib/php') [/home/hyfsterion/Programy/sandbox/xlab2/vendor/micro/micro/Micro/View.php] (60)
+11:33:05 127.0.0.1 [8] Undefined variable: productList [/home/hyfsterion/Programy/sandbox/xlab2/View/Index/Index.php] (2)
+11:33:30 127.0.0.1 [8] Undefined variable: productList [/home/hyfsterion/Programy/sandbox/xlab2/View/Index/Index.php] (2)
+11:36:57 127.0.0.1 [8] Undefined property: Micro\View::$productList [/home/hyfsterion/Programy/sandbox/xlab2/View/Index/Index.php] (2)
+11:37:34 127.0.0.1 [8] Undefined variable: productList [/home/hyfsterion/Programy/sandbox/xlab2/View/Index/Index.php] (2)
+11:41:09 127.0.0.1 [8] Undefined variable: productList [/home/hyfsterion/Programy/sandbox/xlab2/View/Index/Index.php] (3)
+11:41:09 127.0.0.1 [8] Undefined variable: productList [/home/hyfsterion/Programy/sandbox/xlab2/View/Index/Index.php] (3)
+11:41:09 127.0.0.1 [2] require(/home/hyfsterion/Programy/sandbox/xlab2/View/&lt;h3&gt;Product list&lt;/h3&gt;
+&lt;p&gt;product list&lt;/p&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+.system_error {
+	border:1px solid #990000;
+	padding:10px 20px;
+	margin:10px;
+	font: 13px/1.4em verdana;
+	background: #fff;
+}
+code.source {
+	white-space: pre;
+	background: #fff;
+	padding: 1em;
+	display: block;
+	margin: 1em 0;
+	border: 1px solid #bedbeb;
+}
+.system_error .box {
+	margin: 1em 0;
+	background: #ebf2fa;
+	padding: 10px;
+	border: 1px solid #bedbeb;
+}
+.code.source em { background: #ffc; }
+&lt;/style&gt;
+
+&lt;div class=&quot;system_error&quot;&gt;
+
+	&lt;b style=&quot;color: #990000&quot;&gt;Error&lt;/b&gt;
+	&lt;p&gt;Undefined variable: productList&lt;/p&gt;
+
+	
+	&lt;div class=&quot;box&quot;&gt; in /home/hyfsterion/Programy/sandbox/xlab2/vendor/micro/micro/Micro/View.php [60]&lt;code class=&quot;source&quot;&gt;&lt;b&gt;55&lt;/b&gt; 	public function __toString()
+&lt;b&gt;56&lt;/b&gt; 	{
+&lt;b&gt;57&lt;/b&gt; 		try {
+&lt;b&gt;58&lt;/b&gt; 			ob_start();
+&lt;b&gt;59&lt;/b&gt; 			extract((array) $this);
+&lt;b&gt;60&lt;/b&gt; &lt;em&gt;			require static::$directory . $this-&amp;gt;__view . static::$ext;
+&lt;/em&gt;&lt;b&gt;61&lt;/b&gt; 			return ob_get_clean();
+&lt;b&gt;62&lt;/b&gt; 		}
+&lt;b&gt;63&lt;/b&gt; 		catch(\Exception $e)
+&lt;b&gt;64&lt;/b&gt; 		{
+&lt;b&gt;65&lt;/b&gt; 			\Micro\Error::exception($e);
+&lt;/code&gt;&lt;b&gt;Function Arguments&lt;/b&gt;&lt;pre&gt;Array
+(
+    [0] =&amp;gt; /home/hyfsterion/Programy/sandbox/xlab2/View/System/Error.php
+)
+&lt;/pre&gt;
+&lt;/div&gt;&lt;div class=&quot;box&quot;&gt;&lt;b&gt;Called by Micro\View-&gt;__toString()&lt;/b&gt; in /home/hyfsterion/Programy/sandbox/xlab2/vendor/micro/micro/Micro/Error.php [45]&lt;code class=&quot;source&quot;&gt;&lt;b&gt;40&lt;/b&gt; 		self::header();
+&lt;b&gt;41&lt;/b&gt; 
+&lt;b&gt;42&lt;/b&gt; 		$view = new View(&amp;#039;System/Error&amp;#039;);
+&lt;b&gt;43&lt;/b&gt; 		$view-&amp;gt;error = $error;
+&lt;b&gt;44&lt;/b&gt; 		$view-&amp;gt;code = $code;
+&lt;b&gt;45&lt;/b&gt; &lt;em&gt;		print $view;
+&lt;/em&gt;&lt;b&gt;46&lt;/b&gt; 
+&lt;b&gt;47&lt;/b&gt; 		return TRUE;
+&lt;b&gt;48&lt;/b&gt; 	}
+&lt;b&gt;49&lt;/b&gt; 
+&lt;b&gt;50&lt;/b&gt; 
+&lt;/code&gt;&lt;b&gt;Function Arguments&lt;/b&gt;&lt;pre&gt;Array
+(
+)
+&lt;/pre&gt;
+&lt;/div&gt;&lt;div class=&quot;box&quot;&gt;&lt;b&gt;Called by Micro\Error::handler()&lt;/b&gt; in /home/hyfsterion/Programy/sandbox/xlab2/View/Index/Index.php [3]&lt;code class=&quot;source&quot;&gt;&lt;b&gt;1&lt;/b&gt; &amp;lt;h3&amp;gt;Product list&amp;lt;/h3&amp;gt;
+&lt;b&gt;2&lt;/b&gt; &amp;lt;p&amp;gt;product list&amp;lt;/p&amp;gt;
+&lt;b&gt;3&lt;/b&gt; &lt;em&gt;&amp;lt;?php var_dump($productList) ?&amp;gt;
+&lt;/em&gt;&lt;/code&gt;&lt;b&gt;Function Arguments&lt;/b&gt;&lt;pre&gt;Array
+(
+    [0] =&amp;gt; 8
+    [1] =&amp;gt; Undefined variable: productList
+    [2] =&amp;gt; /home/hyfsterion/Programy/sandbox/xlab2/View/Index/Index.php
+    [3] =&amp;gt; 3
+    [4] =&amp;gt; Array
+        (
+            [this] =&amp;gt; Micro\View Object
+                (
+                    [__view:Micro\View:private] =&amp;gt; Index/Index
+                )
+
+        )
+
+)
+&lt;/pre&gt;
+&lt;/div&gt;&lt;div class=&quot;box&quot;&gt;&lt;b&gt;Called by require()&lt;/b&gt; in /home/hyfsterion/Programy/sandbox/xlab2/vendor/micro/micro/Micro/View.php [60]&lt;code class=&quot;source&quot;&gt;&lt;b&gt;55&lt;/b&gt; 	public function __toString()
+&lt;b&gt;56&lt;/b&gt; 	{
+&lt;b&gt;57&lt;/b&gt; 		try {
+&lt;b&gt;58&lt;/b&gt; 			ob_start();
+&lt;b&gt;59&lt;/b&gt; 			extract((array) $this);
+&lt;b&gt;60&lt;/b&gt; &lt;em&gt;			require static::$directory . $this-&amp;gt;__view . static::$ext;
+&lt;/em&gt;&lt;b&gt;61&lt;/b&gt; 			return ob_get_clean();
+&lt;b&gt;62&lt;/b&gt; 		}
+&lt;b&gt;63&lt;/b&gt; 		catch(\Exception $e)
+&lt;b&gt;64&lt;/b&gt; 		{
+&lt;b&gt;65&lt;/b&gt; 			\Micro\Error::exception($e);
+&lt;/code&gt;&lt;b&gt;Function Arguments&lt;/b&gt;&lt;pre&gt;Array
+(
+    [0] =&amp;gt; /home/hyfsterion/Programy/sandbox/xlab2/View/Index/Index.php
+)
+&lt;/pre&gt;
+&lt;/div&gt;&lt;div class=&quot;box&quot;&gt;&lt;b&gt;Called by Micro\View-&gt;__toString()&lt;/b&gt; in /home/hyfsterion/Programy/sandbox/xlab2/vendor/micro/micro/Micro/View.php [60]&lt;code class=&quot;source&quot;&gt;&lt;b&gt;55&lt;/b&gt; 	public function __toString()
+&lt;b&gt;56&lt;/b&gt; 	{
+&lt;b&gt;57&lt;/b&gt; 		try {
+&lt;b&gt;58&lt;/b&gt; 			ob_start();
+&lt;b&gt;59&lt;/b&gt; 			extract((array) $this);
+&lt;b&gt;60&lt;/b&gt; &lt;em&gt;			require static::$directory . $this-&amp;gt;__view . static::$ext;
+&lt;/em&gt;&lt;b&gt;61&lt;/b&gt; 			return ob_get_clean();
+&lt;b&gt;62&lt;/b&gt; 		}
+&lt;b&gt;63&lt;/b&gt; 		catch(\Exception $e)
+&lt;b&gt;64&lt;/b&gt; 		{
+&lt;b&gt;65&lt;/b&gt; 			\Micro\Error::exception($e);
+&lt;/code&gt;&lt;b&gt;Function Arguments&lt;/b&gt;&lt;pre&gt;Array
+(
+)
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+NULL
+.php): failed to open stream: Nie ma takiego pliku ani katalogu [/home/hyfsterion/Programy/sandbox/xlab2/vendor/micro/micro/Micro/View.php] (60)
+11:41:09 127.0.0.1 require(): Failed opening required '/home/hyfsterion/Programy/sandbox/xlab2/View/&lt;h3&gt;Product list&lt;/h3&gt;
+&lt;p&gt;product list&lt;/p&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+.system_error {
+	border:1px solid #990000;
+	padding:10px 20px;
+	margin:10px;
+	font: 13px/1.4em verdana;
+	background: #fff;
+}
+code.source {
+	white-space: pre;
+	background: #fff;
+	padding: 1em;
+	display: block;
+	margin: 1em 0;
+	border: 1px solid #bedbeb;
+}
+.system_error .box {
+	margin: 1em 0;
+	background: #ebf2fa;
+	padding: 10px;
+	border: 1px solid #bedbeb;
+}
+.code.source em { background: #ffc; }
+&lt;/style&gt;
+
+&lt;div class=&quot;system_error&quot;&gt;
+
+	&lt;b style=&quot;color: #990000&quot;&gt;Error&lt;/b&gt;
+	&lt;p&gt;Undefined variable: productList&lt;/p&gt;
+
+	
+	&lt;div class=&quot;box&quot;&gt; in /home/hyfsterion/Programy/sandbox/xlab2/vendor/micro/micro/Micro/View.php [60]&lt;code class=&quot;source&quot;&gt;&lt;b&gt;55&lt;/b&gt; 	public function __toString()
+&lt;b&gt;56&lt;/b&gt; 	{
+&lt;b&gt;57&lt;/b&gt; 		try {
+&lt;b [/home/hyfsterion/Programy/sandbox/xlab2/vendor/micro/micro/Micro/View.php] (60)
+11:44:38 127.0.0.1 syntax error, unexpected '$product' (T_VARIABLE), expecting ',' or ';' [/home/hyfsterion/Programy/sandbox/xlab2/View/Index/Index.php] (5)
+11:44:53 127.0.0.1 syntax error, unexpected '$product' (T_VARIABLE), expecting ',' or ';' [/home/hyfsterion/Programy/sandbox/xlab2/View/Index/Index.php] (5)
+11:44:54 127.0.0.1 syntax error, unexpected '$product' (T_VARIABLE), expecting ',' or ';' [/home/hyfsterion/Programy/sandbox/xlab2/View/Index/Index.php] (5)
+11:44:54 127.0.0.1 syntax error, unexpected '$product' (T_VARIABLE), expecting ',' or ';' [/home/hyfsterion/Programy/sandbox/xlab2/View/Index/Index.php] (5)

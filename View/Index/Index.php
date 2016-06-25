@@ -1,2 +1,12 @@
-<h1>Welcome to MicroMVC</h1>
-<p>If you can see this then your install must be working! Try clicking on the links above to see some example uses.</p>
+<h3>Product list</h3>
+
+<ul class="list-product">
+<?php foreach ($productList as $product): ?>
+    <li>
+        <?php echo $product['name'] ?>
+        - <?php echo $product['desc'] ?>
+        <?php printf("%.2f", $product['price']) ?> zł/szt,
+        dostępnych <?php echo $product['amount'] ?> sztuk
+    </li>
+<?php endforeach ?>
+</ul>

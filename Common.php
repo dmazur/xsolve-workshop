@@ -518,3 +518,30 @@ function colorize($text, $color, $bold = FALSE)
 }
 
 // End
+
+
+/**
+ *	@author Łukasz Proksa
+ *  Some extensions for this particular website
+ */
+
+/**
+ * Print template by creating new \Micro\View object, passing variables from extended template and printing it.
+ * @param string $template name
+ * @param \Micro\View object $extended template
+ * @return string HTML text
+ */
+function print_template($template, $extends = NULL)
+{
+	if (empty($template) || empty(trim($template))) {
+		// empty extensions are allowed
+		return '';
+	}
+  $view = new \Micro\View($template);
+  if (!is_null($extends)) {
+  	$view->set(get_object_vars($extends));
+  	$view->parent = $extends;
+  }
+
+	return (print $view);
+}

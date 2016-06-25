@@ -26,27 +26,14 @@
 
 </head>
 <body lang="en">
-<?php if( ! empty($sidebar)) { ?>
-
-	<div id="content">
-		<?php print $content; ?>
-	</div>
-
-	<div id="sidebar">
-		<?php print $sidebar; ?>
-	</div>
-
-<?php } else { // Else they want to do the content layout themselves... ?>
 
 	<div id="page">
-		<?php print $content; ?>
+		<?php print_template(@$content, $this) ?>
 	</div>
 
-<?php } ?>
+	<?php if(isset($pagination)) print $pagination;?>
 
-<?php if(isset($pagination)) print $pagination;?>
-
-<?php if(isset($debug)) print '<div id="debug">'. $debug. '</div>';?>
+	<?php if(isset($debug)) print '<div id="debug">'. $debug. '</div>';?>
 
 </body>
 </html>
