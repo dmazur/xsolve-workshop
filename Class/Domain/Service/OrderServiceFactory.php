@@ -5,11 +5,14 @@
  * and open the template in the editor.
  */
 
+namespace Domain\Service;
+
 /**
+ * Description of OrderServiceFactory
  *
  * @author dawid
  */
-interface OrderPriceCalculatorInterface
+class OrderServiceFactory
 {
-    public 
+    //put your code here
 }
